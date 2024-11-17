@@ -114,7 +114,6 @@ RUN \
     && \
     echo "**** install tic application runtime packages ****" \
         && apt-get install -y --no-install-recommends \
-            ffmpeg \
             procps \
     && \
     echo "**** install ffmpeg6 ****" \
