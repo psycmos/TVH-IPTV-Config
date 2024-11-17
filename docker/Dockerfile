@@ -119,7 +119,7 @@ RUN \
     echo "**** install ffmpeg6 ****" \
     add-apt-repository ppa:jonathonf/ffmpeg-4 \
     && apt-get update \
-    && apt-get install -y ffmpeg=6.*
+    && apt-get install -y ffmpeg=6.* --no-install-recommends \
 
 
     && \
