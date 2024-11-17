@@ -117,6 +117,13 @@ RUN \
             ffmpeg \
             procps \
     && \
+    echo "**** install ffmpeg6 ****" \
+    add-apt-repository ppa:jonathonf/ffmpeg-4 \
+    && apt-get update \
+    && apt-get install -y ffmpeg=6.*
+
+
+    && \
     if command -v tvheadend &> /dev/null; then \
         echo "**** install tvh application runtime packages ****" \
             && apt-get install -y --no-install-recommends \
